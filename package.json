@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-qyy-mp",
+  "version": "1.0.0",
+  "description": "群应用小程序 Eslint 规范",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "群应用"
+  ],
+  "author": "QYY-Team",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.13.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.13.0"
+  }
+}
