@@ -299,7 +299,7 @@ module.exports = {
       "afterColon": true
     }],
     // 强制使用一致的换行风格
-    "linebreak-style": [1, "windows"],
+    "linebreak-style": [1, "unix"],
     // 要求在注释周围有空行 ( 要求在块级注释之前有一空行)
     "lines-around-comment": [1, {
       "beforeBlockComment": true
@@ -347,7 +347,7 @@ module.exports = {
     // 要求 return 语句之前有一空行
     "newline-before-return": 0,
     // 要求方法链中每个调用都有一个换行符
-    "newline-per-chained-call": 1,
+    "newline-per-chained-call": 0,
     // 禁用 continue 语句
     "no-continue": 0,
     // 禁止在代码行后使用内联注释
