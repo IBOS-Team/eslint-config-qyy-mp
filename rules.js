@@ -289,7 +289,7 @@ module.exports = {
     // 强制使用命名的 function 表达式
     "func-names": 0,
     // 文件末尾强制换行
-    "eol-last": 2,
+    "eol-last": 0,
     "indent": [2, 2, {
       "SwitchCase": 1
     }],
