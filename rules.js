@@ -104,7 +104,7 @@ module.exports = {
     // 不允许在 case 子句中使用词法声明
     "no-case-declarations": 2,
     // 禁止除法操作符显式的出现在正则表达式开始的位置
-    "no-p-regex": 2,
+    "no-div-regex": 2,
     // 禁止 if 语句中有 return 之后有 else
     "no-else-return": 0,
     // 禁止出现空函数.如果一个函数包含了一条注释，它将不会被认为有问题。
@@ -285,12 +285,12 @@ module.exports = {
     "computed-property-spacing": [2, "never"],
     // 用于指统一在回调函数中指向this的变量名，箭头函数中的this已经可以指向外层调用者，应该没卵用了
     // e.g [0,"that"] 指定只能 var that = this. that不能指向其他任何值，this也不能赋值给that以外的其他值
-    "consistent-this": [1, "that"],
+    "consistent-this": [1],
     // 强制使用命名的 function 表达式
     "func-names": 0,
     // 文件末尾强制换行
     "eol-last": 2,
-    "indent": [2, 4, {
+    "indent": [2, 2, {
       "SwitchCase": 1
     }],
     // 强制在对象字面量的属性中键和值之间使用一致的间距
@@ -421,7 +421,7 @@ module.exports = {
     // 要求操作符周围有空格
     "space-infix-ops": ["error", {
         "int32Hint": true
-      }]
+    }],
       // 强制在一元操作符前后使用一致的空格
     "space-unary-ops": [2, {
       "words": true,
