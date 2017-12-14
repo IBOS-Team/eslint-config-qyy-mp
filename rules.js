@@ -387,7 +387,7 @@ module.exports = {
     // 强制花括号内换行符的一致性
     "object-curly-newline": 0,
     // 强制在花括号中使用一致的空格
-    "object-curly-spacing": 0,
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": false, "objectsInObjects": false }],
     // 强制将对象的属性放在不同的行上
     "object-property-newline": 0,
     // 强制函数中的变量要么一起声明要么分开声明
