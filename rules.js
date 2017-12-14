@@ -1,4 +1,6 @@
 module.exports = {
+  // 禁止层叠其他配置。FYI: http://eslint.cn/docs/user-guide/configuring#configuration-cascading-and-hierarchy
+  "root": true,
   "rules": {
      // 禁止条件表达式中出现赋值操作符
     "no-cond-assign": 2,
