@@ -16,7 +16,7 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      // http://es6.ruanyifeng.com/#docs/object#对象的扩展运算符 
+      // http://es6.ruanyifeng.com/#docs/object#对象的扩展运算符
       "experimentalObjectRestSpread": true
     }
   },
@@ -25,7 +25,8 @@ module.exports = {
     "App": true,
     "Page": true,
     "getApp": true,
-    "getCurrentPages": true
+    "getCurrentPages": true,
+    "Component": true,
   },
   "rules": {}
 };

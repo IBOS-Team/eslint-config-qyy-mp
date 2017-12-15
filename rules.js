@@ -291,7 +291,7 @@ module.exports = {
     // 强制使用命名的 function 表达式
     "func-names": 0,
     // 文件末尾强制换行
-    "eol-last": 0,
+    "eol-last": ["error", "always"],
     "indent": [2, 2, {
       "SwitchCase": 1
     }],
@@ -301,7 +301,7 @@ module.exports = {
       "afterColon": true
     }],
     // 强制使用一致的换行风格
-    "linebreak-style": [1, "unix"],
+    "linebreak-style": [2, "unix"],
     // 要求在注释周围有空行 ( 要求在块级注释之前有一空行)
     "lines-around-comment": [1, {
       "beforeBlockComment": true
@@ -403,7 +403,15 @@ module.exports = {
     // 要求或禁止块内填充
     "padded-blocks": 0,
     // 要求对象字面量属性名称用引号括起来
-    "quote-props": 0,
+    "quote-props": [
+      'error',
+      'as-needed',
+      // 'always',
+      {
+        keywords: true,
+        numbers: true,
+      },
+    ],
     // 强制使用一致的反勾号、双引号或单引号
     "quotes": [2, "single", "avoid-escape"],
     // 要求使用 JSDoc 注释
@@ -443,7 +451,11 @@ module.exports = {
     // 要求箭头函数体使用大括号
     "arrow-body-style": 0,
     // 要求箭头函数的参数使用圆括号
-    "arrow-parens": 0,
+    "arrow-parens": [
+      'error',
+      "as-needed",
+      { "requireForBlockBody": true },
+    ],
     "arrow-spacing": [2, {
       "before": true,
       "after": true
@@ -478,7 +490,7 @@ module.exports = {
     // 要求或禁止对象字面量中方法和属性使用简写语法
     "object-shorthand": 0,
     // 要求使用箭头函数作为回调
-    "prefer-arrow-callback": 0,
+    "prefer-arrow-callback": 'error',
     // 要求使用 const 声明那些声明后不再被修改的变量
     "prefer-const": 0,
     // 要求在合适的地方使用 Reflect 方法
