@@ -397,7 +397,7 @@ module.exports = {
     // 要求或禁止在可能的情况下要求使用简化的赋值操作符
     "operator-assignment": 0,
     // 强制操作符使用一致的换行符
-    "operator-linebreak": [2, "after"],
+    "operator-linebreak": [2, "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
     // 要求或禁止块内填充
     "padded-blocks": 0,
     // 要求对象字面量属性名称用引号括起来
