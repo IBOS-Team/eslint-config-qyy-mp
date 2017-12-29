@@ -202,7 +202,7 @@ module.exports = {
     // 要求 IIFE 使用括号括起来
     "wrap-iife": [2, "any"],
     // 要求或禁止 "Yoda" 条件
-    "yoda": [2, "never"],
+    "yoda": [2, "never", { "exceptRange": true }],
     // 要求或禁止使用严格模式指令
     "strict": 0,
     //////////////
